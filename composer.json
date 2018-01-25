@@ -1,0 +1,13 @@
+{
+    "name": "mauteri/cheezcap",
+    "type": "wordpress-plugin",
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "Mike Auteri",
+            "email": "mauteri@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
