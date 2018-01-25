@@ -3,13 +3,12 @@
 	"description": "Cheezburger Custom Administration Panel",
 	"type": "wordpress-plugin",
 	"license": "GPL-2.0+",
-		"version": "1.0",
+	"version": "1.0",
 	"authors": [
 		{
 			"name": "Mike Auteri",
 			"email": "mauteri@gmail.com"
 		}
 	],
-	"minimum-stability": "dev",
 	"require": {}
 }
