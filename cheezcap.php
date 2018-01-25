@@ -45,7 +45,7 @@ class CheezCap {
 		$this->messages = $this->get_default_messages();
 
 		add_action( 'admin_menu', array( $this, 'add_admin_page' ) );
-    	add_action( 'admin_init', array( $this, 'handle_admin_actions' ) );
+		add_action( 'admin_init', array( $this, 'handle_admin_actions' ) );
 	}
 
 	function init() {
@@ -95,7 +95,7 @@ class CheezCap {
 
 	// UI-related functions
 	function add_admin_page() {
-		$page_name = sprintf( __( '%s Settings', 'cheezcap' ), esc_html( $this->get_setting( 'themename' ) ) );
+		$page_name = esc_html_e( 'Theme Settings', 'cheezcap' );
 		$page_hook = add_menu_page( $page_name, $page_name, $this->get_setting( 'req_cap_to_edit' ), $this->get_setting( 'themeslug' ), array( $this, 'display_admin_page' ), $this->get_setting( 'cap_icon_url' ), $this->get_setting( 'cap_menu_position' ) );
 
 		add_action( "admin_print_scripts-$page_hook", array( $this, 'admin_js_libs' ) );
@@ -314,3 +314,5 @@ function cheezcap_get_option( $option, $echo = false, $sanitize_callback = '' ) 
 	else
 		return $value;
 }
+
+new Cheezcap();
