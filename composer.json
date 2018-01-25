@@ -1,7 +1,7 @@
 {
-    "name": "open-diary/cheezcap",
+    "name": "Open-Diary/cheezcap",
     "type": "wordpress-plugin",
-    "license": "GNU",
+    "license": "GNU version 2",
     "authors": [
         {
             "name": "Mike Auteri",
