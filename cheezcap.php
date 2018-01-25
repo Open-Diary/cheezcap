@@ -314,5 +314,3 @@ function cheezcap_get_option( $option, $echo = false, $sanitize_callback = '' ) 
 	else
 		return $value;
 }
-
-new Cheezcap();
