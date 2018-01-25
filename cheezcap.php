@@ -95,7 +95,7 @@ class CheezCap {
 
 	// UI-related functions
 	function add_admin_page() {
-		$page_name = esc_html_e( 'Theme Settings', 'cheezcap' );
+		$page_name = sprintf( __( '%s Settings', 'cheezcap' ), esc_html( $this->get_setting( 'themename' ) ) );
 		$page_hook = add_menu_page( $page_name, $page_name, $this->get_setting( 'req_cap_to_edit' ), $this->get_setting( 'themeslug' ), array( $this, 'display_admin_page' ), $this->get_setting( 'cap_icon_url' ), $this->get_setting( 'cap_menu_position' ) );
 
 		add_action( "admin_print_scripts-$page_hook", array( $this, 'admin_js_libs' ) );
