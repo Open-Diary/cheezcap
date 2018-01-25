@@ -1,6 +1,7 @@
 {
 	"name": "Open-Diary/cheezcap",
 	"description": "Cheezburger Custom Administration Panel",
+	"type": "wordpress-plugin",
 	"license": "GPL-2.0+",
 	"version": "1.0",
 	"authors": [
