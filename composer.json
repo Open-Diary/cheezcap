@@ -1,7 +1,9 @@
 {
     "name": "Open-Diary/cheezcap",
+		"description": "Cheezburger Custom Administration Panel",
     "type": "wordpress-plugin",
-    "license": "GNU version 2",
+    "license": "GPL-2.0+",
+		"version": "1.0",
     "authors": [
         {
             "name": "Mike Auteri",
